@@ -1,0 +1,539 @@
+
+* @Author: hanting
+* @Date:   2017-10-23 09:36:47
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-24 13:41:15
+*/
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+#app{
+	width: 100%;
+	height: 70rem;
+	background-image: url('../img/beijing.webp');
+	background-repeat: no-repeat;
+	background-size: 100% 13.5rem;
+}
+
+
+.header{
+	width: 100%;
+	height: .8rem;
+	position: fixed;
+	background: #ff0036;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 0 .1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .hleft>i{
+	display: block;
+	width: .8rem;
+	color: #fff;
+	line-height: .8px;
+	text-align: center;
+}
+.header .hmid>input{
+	display: block;
+	width: 4.6rem;
+	height: .7rem;
+}
+.header .hright{
+	width: .8rem;
+	height: .8rem;
+	font-size: 14px;
+	line-height: .8rem;
+	padding-right: .1rem;
+	text-align: center;
+	color: #fff;
+}
+.header .hmid>input{
+	display: block;
+	border-radius: 5px;
+	padding-left: .8rem;
+    width: 4.6rem;
+    height: .7rem;
+}
+.header .hmid{
+	position: relative；
+}
+.hmid>i{
+	display: block;
+	width: .8rem;
+	height: .8rem;
+	line-height: .8rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #757575;
+    font-size: 14px;
+    text-align: center;
+}
+.headbox{
+	width: 100%;
+	height: .8rem;
+}
+.lb{
+	width: 100%;
+	height: 2rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap;
+
+}
+.lb>div>img{
+	width: .94rem;
+	height: .94rem;
+	margin: .1rem auto;
+}
+.lb>div>p{
+	color: #fff;
+	width: 100%;
+	height: .33rem;
+	font-size: 14px;
+	line-height: .33rem;
+	text-align: center;
+}
+/* banner开始 */
+.banner{
+    width: 100%;
+    height: 3rem;
+    padding: .2rem 0.2rem;
+    position: relative;
+    overflow: hidden;
+}
+.bannerBox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bannerBox>img{
+   position: absolute;
+    top:0;
+    left:0;
+}
+.banner .lbd{
+    width: 4rem;
+    height: .2rem;
+    position: absolute;
+    right:0;
+    left:0;
+    bottom: .2rem;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner .lbd>li{
+    width: .4rem;
+    height: .1rem;
+    background: rgba(255,255,255,.9);
+    border-radius: .2rem;
+}
+.banner .lbd>li.active{
+    background: rgba(255,255,255,.4);
+}
+/* banner结束 */
+.qutianmao{
+	width: 100%;
+	height: 4.9rem;
+}
+.qutianmao>img{
+	width: 100%;
+    height: 100%;
+    background: inherit;
+}
+/* 去天猫结束 */
+/* 精选好物开始 */
+.haowu{
+	width: 100%;
+	height: 1.2rem;
+}
+.haowu>img{
+	width: 6.56rem;
+	height: 100%;
+	margin: auto;
+}
+.bibei{
+	width: 100%;
+	height: 2.8rem;
+	padding-left:.25rem;
+	padding-right: .25rem;
+	position: relative;
+	/* background-image: url('../img/beijing3.png');
+	background-size: cover; */
+}
+.bibeizuo{
+	width: 4.43rem;
+	height: 100%;
+	background-image: url('../img/xiong.png');
+	background-size: cover;
+	position: relative;
+}
+
+.bibeiyou{
+	width: 3.66rem;
+	height: 2.8rem;
+	background: #8603FD;
+	position: absolute;
+	top: 0;
+	left: 3.6rem;
+}
+/* .xiong{
+	width: 4.43rem;
+	height: 100%;
+	position: relative;
+} */
+.shuang{
+	position: absolute;
+	width: .42rem;
+	height: .24rem;
+    top: .8rem;
+    margin-left: .3rem;
+}
+.jhc{
+	width: 1.4rem;
+	height: .3rem;
+	position: absolute;
+	top: 1.9rem;
+	padding-left: .3rem;
+}
+.bibeizuo>span{
+	position: absolute;
+	top:1.1rem;
+	font-size:.36rem;
+	display: block;
+	float: left;
+	color:#fff;
+	padding-left: .3rem;
+}
+.bibeizuo>p{
+	position: absolute;
+	top:1.55rem;
+	font-size:.2rem;
+	display: block;
+	float: left;
+	color:#fff;
+	padding-left:  .3rem;
+}
+.bibeiyou .l{
+	height: 2.7rem;
+    width: 1.7rem;
+	background: #fff;
+	margin-top: .1rem;
+	margin-right: .1rem;
+	float: left;
+}
+.imgb{
+	width: 1rem;
+	height: 1rem;
+	margin: 1.5rem .187rem;
+	position: absolute;
+	top: -10px;
+	left: auto;
+	padding-left: 5px;
+}
+.ll{
+	width: .65rem;
+	height: .2rem;
+	padding-left: .3rem;
+}
+.l>span{
+	font-size:12px;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+.l>p{
+	font-size: 10px;
+	display: block;
+	float: left;
+	color:#FF609A;
+	padding-left: 10px;
+	padding-top: .05rem;
+	padding-bottom: .05rem;
+}
+
+/* 精选好物结束 */
+/* 直营部分开始 */
+.chaoshi{
+	width: 100%;
+	height: 4.5rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	background: #F5F5F5;
+}
+.high{
+	width: 3rem;
+	height: 100%;
+	float: left;
+}
+.cright{
+	width: 4.1rem;
+	height: 100%;
+	background: #F5F5F5;
+	float: right;
+	position: relative;
+}
+.cshang{
+	width: 100%;
+	height: 2.24rem;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cshang1{
+	width: 2.005rem;
+	height: 2.2rem;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.cshang2{
+	width: 2.005rem;
+	height: 2.2rem;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.sk{
+	width: 1.48rem;
+	height: 1.48rem;
+	float: right;
+	margin: 0.26rem;
+}
+.jk{
+	width: 1.8rem;
+	height: .56rem;
+	margin-left: .3rem;
+	padding-top: .26rem;
+}
+.cright p{
+	font-size:.01rem;
+	color: #999;
+	line-height: .4rem;
+	margin-left: .3rem;
+}
+.man{
+	width: 1.189rem;
+	height: .3rem;
+	margin-left: .3rem;
+	margin-top: .06rem;
+}
+.xian{
+	width: 1.231rem;
+	height: 0.56rem;
+	margin-left: .3rem;
+	padding-top: .26rem;
+}
+.shi{
+	width: 1rem;
+	height: .93rem;
+	padding-top: .08rem;
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+.bao{
+	width: 100%;
+	height: 2.6rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	background: #F5F5F5;
+}
+.ybao{
+	width: 3.01rem;
+	height: 100%;
+	float: left;
+	background: #fff;
+}
+.ebao{
+	width: 2.01rem;
+	height: 100%;
+	float: right;
+	background: #fff;
+}
+.sbao{
+	width: 2.01rem;
+	height: 100%;
+	float: right;
+	background: #fff;
+	border-right: .1rem solid #F5F5F5;
+}
+/* 第一个小方格内容开始 */
+.jinkou>p{
+	font-size: .28rem;
+	padding-top: .33rem;
+	padding-left: .33rem;
+}
+.man400>p{
+	font-size: .16rem;
+	padding-left: .33rem;
+	color: #ff005e;
+}
+.ybao>img{
+	width: .8rem;
+	height: .25rem;
+	padding-left: .33rem;
+}
+.xiatu>img{
+	width: 1.2rem;
+	height: 1.2rem;
+	float: left;
+}
+.xiatu3>img{
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+    margin: 0 .5rem;
+}
+.ebao>img{
+	width: .8rem;
+	height: .25rem;
+	padding-left: .33rem;
+}
+.sbao>img{
+	width: .8rem;
+	height: .25rem;
+	padding-left: .33rem;
+}
+.jiu{
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+    margin: 0 .5rem;
+}
+.kh{
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+    margin: 0 .5rem;
+}
+.chuanqi{
+	width: 3rem;
+	height: 100%;
+	float: left;
+}
+.lhlb{
+	width: 100%;
+	height: 7.36rem;
+	background: red;
+	float: left;
+	padding-top: .33rem;
+	padding-left: .2rem;
+	padding-bottom: 0.33rem;
+	padding-right: 0.33rem;
+	background-color: #ffffff;
+}
+
+.lbzuo{
+	width: 3.2rem;
+	height: 100%;
+	float: left;
+	border: .01rem solid #ECECEC; 
+	
+}
+.lbyou{
+	width: 3.32rem;
+	height: 100%;
+	float: right;
+	border: .01rem solid #ECECEC;
+}
+.lbtu>img{
+	width: 100%;
+	height: 3.1rem;
+}
+.lvsm{
+	width: 100%;
+	height: 1.3rem;
+}
+.lvsm>p{
+	padding: .3rem .3rem 0;
+    font-family: PingFangSC-Regular;
+    font-size: .16rem;
+    color: #3E3E3E;
+    overflow: hidden;
+    white-space: normal;
+    height: 1.12rem;
+    word-break: normal;
+    line-height: .36rem;
+}
+.sctk{
+	margin: -.94rem .3rem 0;
+    height: .45rem;
+}
+.sctk>span{
+	background-color: #FAD3D5;
+    font-family: PingFangSC-Regular;
+    font-size: .26rem;
+    color: #FF3B44;
+    line-height: .2666666667rem;
+}
+.goumai{
+	width: 100%;
+	height: .6rem;
+	margin: 1.04rem .3rem 0;
+}
+.goumai>p{
+	font-family: PingFangSC-Semibold;
+    font-size: .34rem;
+    color: #231F1F;
+    line-height: .25rem;
+    float: left;
+}
+.gwc>img{
+	width: .35rem;
+	height: .35rem;
+	float: left;
+	padding:0 0 0 0; 
+}
+.gwc{
+	float: left;
+	padding:0 0 0 1.3rem; 
+}
+.kuang{
+	width: 100%;
+	height: .001rem;
+	border-top:.01rem dashed #ECECEC; 
+	
+}
+.yhpj{
+	height: 2rem;
+    overflow: hidden;
+    word-break: break-all;
+    line-height: .24rem;
+    margin: -.25rem 0 0 0;
+    padding: 0 0 0 0;
+}
+.yhpj>span {
+	font-size: .26rem;
+	padding: .1rem 0 0 0;
+	margin: 0 0 0 .1rem;
+}
+.yhpj>hsf{
+	font-family: PingFangSC-Regular;
+    font-size: .32rem;
+    color: #444;
+    letter-spacing: 0;
+    word-break: break-all;
+}
+.yhpj>span>img{
+	width: .25rem;
+	height: .25rem;
+	float: right;
+	padding: 0 0 0 0;
+	margin: .3rem .9rem 0 0;
+}
+/* lunbo开始 */
+
+/* 轮播结束 */
